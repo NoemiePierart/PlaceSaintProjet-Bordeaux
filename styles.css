@@ -1,0 +1,206 @@
+@import url("CSS/banner.css");
+@import url("CSS/navbar.css");
+@import url("CSS/carousel.css");
+@import url("CSS/menu.css");
+@import url("CSS/map.css");
+@import url("CSS/resto.css")
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: rgba(245,245,245,0.8);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin-top: 25px;
+    margin-bottom: 12.5px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-family: 'Amatic SC', cursive;
+}
+
+h2{
+    font-size: 45px;
+    z-index: -1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Amatic SC', cursive;
+}
+
+h3{
+   color: white;
+   font-size: 45px;
+    z-index: -1;
+    padding-top: 140px;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+}
+
+h4 {
+    font-family: "Raleway", "Helvetica", "sans-serif";
+}
+
+p {
+    text-align: justify;
+    font-size: 14px;
+    margin: 0 0 12.5px;
+}
+
+.container {
+    padding-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section-title {
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    margin: 35px 0px;
+}
+
+
+@media (max-width: 767px){
+.hidden-xs {
+    display: none !important;
+}
+}
+
+@media (min-width: 768px){
+.hidden-md {
+    display: none !important;
+}
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+
+@media (max-width: 767px){
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.footer {
+    background: white;
+    height: 55px;
+    color: rgba(0,0,0,0.3);
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-mini{
+    width: 50px;
+    height: 20px;
+}
+
+#acces > h3{
+    align-items: center;
+    justify-content: center;
+}
+
+/* RESTAURANTS*/
+
+/* Resto - 1 card */
+
+.card-resto {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.card-resto > img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-resto h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.card-resto p {
+    font-size: 14px;
+    opacity: .7;
+    margin: 0;
+    padding: 6px;
+    text-align: left;
+}
+
+.card-resto .card-resto-infos {
+  padding: 15px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+/* Resto layout*/
+
+.cards-resto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+/*Smallest device*/
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards-resto {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .cards-resto {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .cards-resto {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .cards-resto {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .cards-resto {
+    grid-template-columns: 1fr 1fr ;
+  }
+}

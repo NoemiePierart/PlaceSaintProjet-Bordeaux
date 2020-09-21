@@ -1,0 +1,73 @@
+.navbar-stprojet {
+  justify-content: space-between;
+  font-family: 'Amatic SC', cursive;
+  height: 55px;
+  width: 100vw;
+  background: white;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.03);
+  transition: all 0.3s ease;
+  padding: 0px 30px;
+  z-index: 1;
+  align-items: center;
+  text-decoration: none;
+  position: fixed;
+}
+
+.navbar-brand > h5 {
+    text-decoration: none;
+    color: #616668;
+    letter-spacing: 2px;
+    font-size: 23px;
+}
+
+.navbar-stprojet-horizontal{
+  justify-content: flex-end;
+}
+
+.navbar-stprojet-vertical{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #484848;
+  cursor: pointer;
+}
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown-menu{
+  position: absolute;
+  top: 50px;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  list-style: none;
+  font-size: 18px;
+  text-align: left;
+  border: 0px;
+}
+
+.dropdown-menu-vertical{
+  left: auto;
+  right: 0;
+}
+
+.navbar-stprojet-dropdown-menu{
+  margin-top: 15px;
+  box-shadow: 1px 1px 4px #E6E6E6;
+}
+
+
+
+.navbar-items-stprojet {
+    color: #616668;
+    font-size: 19px;
+    cursor: pointer;
+    padding: 0 20px;
+    text-decoration: none;
+}

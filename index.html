@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Place St Projet, Bordeaux</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- Other stylesheets -->
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cabin+Sketch|Indie+Flower|Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/873e0e2f7d.js" crossorigin="anonymous"></script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/1ae26f189c.js"></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-stprojet">
+
+            <!---->
+            <a class="navbar-brand" href="index.html"><h5>Place Saint Projet</h5></a>
+
+            <!--Menu on large screens (horizontal)-->
+            <div class="navbar-stprojet-horizontal hidden-xs hidden-sm">
+                <a href="#accueil" class="navbar-items-stprojet">Accueil</a>
+                <a href="#patrimoine" class="navbar-items-stprojet">Patrimoine</a>
+                <a href="#restaurants" class="navbar-items-stprojet">Restaurants</a>
+                <a href="#acces" class="navbar-items-stprojet">Accès</a>
+            </div>
+
+
+            <!--Menu on mobile (dropdown) -->
+            <div class="navbar-stprojet-vertical hidden-md hidden-lg">
+                <div class="dropwdown">
+                    <i class="fa fa-bars dropwdown-toggle" data-toggle="dropdown" aria-expanded="true" ::before ></i>
+                    <ul class="dropdown-menu dropdown-menu-vertical navbar-stprojet-dropwdown-menu" ::before>
+                        <li>
+                          <a href="#accueil" class="navbar-items-stprojet">Accueil</a>
+                        </li>
+
+                        <li>
+                          <a href="#patrimoine" class="navbar-items-stprojet">Patrimoine</a>
+                        </li>
+                        <li>
+                            <a href="#restaurants" class="navbar-items-stprojet">Restaurants</a>
+                        </li>
+                        <li>
+                            <a href="#acces" class="navbar-items-stprojet">Accès</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        
+        <section id="accueil">
+            
+            <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.lepetitbordeaux.fr/wp-content/uploads/2014/05/Place-Saint-Projet.jpg)">
+                    <div class="banner-content">
+                        <h1>Place Saint Projet</h1>
+                        <p>Bordeaux</p>
+                    </div>
+                    <div class="banner-bottom">
+                        <div class="link">
+                            <a href="#intro"><h4>Découvrir</h4></a>
+                            <a href="#intro">
+                                <div class="circle">
+                                    <div class="triangle-down"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="container section-top">
+                <h2>Place Saint Projet</h2>
+                <p>Parmi les plus anciennes places publiques de Bordeaux, la place Saint-Projet se situe entre la cathédrale Pey Berland, la porte Cailhau, et le Grand Théâtre.
+                </p>
+                <p>Venez savourer le charme de cette place animée en plein coeur de la ville. Après avoir remonté la trépidante rue Sainte Catherine, plus longue rue piétonne d’Europe, vous apprécierez flâner à l’une des terrasses ombragées de la place Saint Projet, et déguster un petit canelé bordelais.
+                </p>
+                <p>Les plus curieux sauront également découvrir ici un lieu chargé d’histoire et d’architecture.</p>
+            </div>
+        </section>
+
+        <section id="patrimoine">
+              
+                <!--Menu-->
+                <div class="section-title" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Place_Saint-Projet_%28Bordeaux%29_-_DS5_2213-Edit.jpg/1600px-Place_Saint-Projet_%28Bordeaux%29_-_DS5_2213-Edit.jpg');">
+                    <h3>Patrimoine</h3>
+                    <div class="menu hidden-xs">
+                      <ul class="list-inline">
+                        <li><a href="#patrimoine.menu" class="patrimoine-button" data-panel="1">Histoire</a></li>
+                        <li><a href="#patrimoine.menu" class="patrimoine-button" data-panel="2">La fontaine</a></li>
+                        <li><a href="#patrimoine.menu" class="patrimoine-button" data-panel="3">L'église</a></li>
+                        <li><a href="#patrimoine.menu" class="patrimoine-button" data-panel="4" >La croix</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="menu-xs hidden-md hidden-lg">
+                      <ul>
+                        <li>
+                            <a href="#patrimoine.menu"  class="patrimoine-button" data-panel="1" >Histoire</a>
+                            <a href="#patrimoine.menu" class="patrimoine-button" data-panel="2">La fontaine</a>
+                        </li>
+                        <li>
+                            <a href="#patrimoine.menu"  class="patrimoine-button" data-panel="3">L'église</a>
+                            <a href="#patrimoine.menu" class="patrimoine-button" data-panel="4">La croix</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                </div>
+
+                <!--Volet "histoire"-->
+                <div class="patrimoine-hidden panel-1 patrimoine-show patrimoine-details container" id="histoire">
+
+                    <h2>Histoire</h2>
+                    <div class="row ">
+                        <div class="col-xs-12 col-sm-6">
+                            <p>La place tient son nom de Saint Projet de Clermont, un évêque auvergnat du VIIème siècle, qui fonda plusieurs monastères et un hôpital.</p>
+
+                            <p> Dès l’époque médiévale, la place Saint Projet se situait déjà au coeur d’un des quartiers les plus animés de Bordeaux. Elle était alors occupée par un marché, une église et un cimetière.</p>
+
+                            <p>Prenez le temps de découvrir la fontaine, la croix de Saint Projet, ainsi que les traces de l'ancienne église désaffectée.
+                            </p>
+                        </div>
+                        <!--Carroussel-->
+
+                        <div id="carouselExampleControls" class="carousel slide col-xs-12 col-sm-6" data-ride="carousel" >
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="https://images.fr.shopping.rakuten.com/photo/866197080.jpg" alt="History Pic 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://www.picclickimg.com/d/l400/pict/193602526295_/33-BORDEAUX-la-place-saint-projet.jpg" alt="History Pic 2">
+                                </div>
+                                <div class="carousel-item">
+                                      <img class="d-block w-100" src="https://www.bordeauxphotopassion.fr/bx/themes/fontaines/font18e/images/font18e0002.jpg" alt="History Pic 3">
+                                </div>
+                                <div class="carousel-item">
+                                      <img class="d-block w-100" src="https://1.bp.blogspot.com/-LP49XE2DGYY/TuIRptdHS2I/AAAAAAAANIw/6GhimPOo6go/s1600/Chaussures+Fayard+Bordeaux.jpg" alt="History Pic 5">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Volet "fontaine"-->
+                <div class="patrimoine-hidden panel-2 patrimoine-details container" id="fontaine">
+                    <h2>La fontaine</h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <p>A l’origine, la fontaine prenait ses eaux à la source d’Arlac, du côté de Mérignac. La sculpture a été réalisée en 1737 par l’artiste Michel Van der Woort.</p>
+                            <p> Au-dessus du fronton triangulaire, l’homme et la femme représenteraient les deux rivières traversant Bordeaux : le Peugue et la Devèze.</p>
+                            <p>Sous le cartouche de marbre rouge, on devine un trophée maritime composé de proues de navire, gouvernail, trident, et corne d’abondance.</p>
+                        </div>
+                        <div class="col-xs-12 col-md-8">
+                            <div class="cards">
+                                <div class="card-category" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/81/Bordeaux_Fontaine_StProjet_R01.jpg)" alt="Eglise1">
+                                </div>
+                                <div class="card-category" style="background-image: url(https://www.picclickimg.com/d/l400/pict/133500319462_/Grand-TABLEAU-sign%C3%A9-Ren%C3%A9-BUTHAUD.jpg)" alt="Eglise 2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Volet "église"-->
+                <div class="patrimoine-hidden panel-3 patrimoine-details container" id="eglise">
+                    <h2>L'ancienne église</h2>
+                    <div class="row intro-title">
+                        <div class="col-xs-12 col-md-4">
+                            <p>Construite au XIVème siècle, l’ancienne église est aujourd’hui désaffectée et totalement intégrée dans les habitations du quartier. </p>
+                            <p> On peut encore cependant voir aujourd’hui le clocher s’élever au-dessus des façades.</p>
+                            <p>La tour est inscrite aux Monuments historiques depuis 1965.</p>
+                        </div>
+                        <div class="col-xs-12 col-md-8">
+                            <div class="cards">
+                                <div class="card-category" style="background-image: url(https://www.cestenfrance.fr/wp-content/uploads/2017/12/33BdxEgliseStprojet02.jpg)" alt="Eglise1">
+                                </div>
+                                <div class="card-category" style="background-image: url(https://www.cestenfrance.fr/wp-content/uploads/2017/12/33BdxEgliseStprojet01.jpg)" alt="Eglise 2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Volet "croix"-->
+                <div class="patrimoine-hidden panel-4 patrimoine-details container" id="croix">
+                    <h2>La croix</h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <p>La croix gothique date du XIVe siècle et provient de l’ancien cimetière.</p>
+                            <p>Elle comprend quatre statues à l’effigie de saints protecteurs, dont Saint-Projet qui tient la palme des martyrs. </p>
+                            <p>La croix fut abattue à la Révolution, mais retrouvée puis restaurée en 1803. Un généreux donateur, un marchand de dentelles du quartier, en financera les travaux.</p>
+                        </div>
+                        <div class="col-xs-12 col-md-8 ">
+                            <div class="cards">
+                                <div class="card-category" style="background-image: url('croix2.jpg')" alt="Eglise1">
+                                </div>
+                                <div class="card-category" style="background-image: url('croix.jpg')" alt="Eglise 2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <script>
+                function hiddenPatrimoine() {
+                    const buttons = document.querySelectorAll(".patrimoine-button");
+                    const patrimoineData = document.querySelectorAll(".patrimoine-details");
+                    buttons.forEach((button) => {
+                        button.addEventListener('click', () => {
+                            let patrimoineCategory = "panel-" + button.dataset.panel;
+                            patrimoineData.forEach((element) => {
+                                element.classList.remove('patrimoine-show');
+                            });
+                        document.querySelector("." + patrimoineCategory).classList.add('patrimoine-show');
+                       });
+                    });
+                };
+                hiddenPatrimoine();
+        </script>
+
+        <section id="restaurants">
+            <div class="section-title section-top" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60')">
+                <h3 class="align-items-center">Restaurants</h3>
+            </div>
+    
+
+    
+            <div class="container">
+
+                <div class="cards-resto">
+
+                   <!--Bo-tannique-->
+                    <div class="card-resto">
+                        <img src="https://res.cloudinary.com/tf-lab/image/upload/w_600,h_337,c_fill,g_auto:subject,q_auto,f_auto/restaurant/250875d4-2f24-4d85-a442-a75d45fd07f1/a31c0862-f69a-4aba-9ad2-93e978d258bf.jpg" />
+                        <div class="card-resto-infos">
+                            <h2>Bo-tannique</h2>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p><i class="fas fa-phone-alt"></i>    +33.5.56.81.34.92</p>
+                                    <p><i class="fas fa-laptop"></i><a href="https://bo-tannique-bordeaux.eatbu.com/?lang=fr">   Site internet</a></p>
+                                </div>
+                                <div class="card-resto-pricing text-right">
+                                    <p><strong>€€€</strong></p>
+                                    <p>Avis : <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                </div>
+                            </div>
+                            <p><i class="fas fa-utensils"></i>    Cuisine raffinée, nomade et gourmande</p>
+                        </div>
+                    </div>
+
+
+                    <!--Central Kitchen-->
+                    <div class="card-resto">
+                        <img src="https://res.cloudinary.com/tf-lab/image/upload/w_600,h_337,c_fill,g_auto:subject,q_auto,f_auto/restaurant/a0bdd5a2-60d0-44a6-912b-a170762e9e74/f79b301b-0f1f-4763-b570-d79c6947409d.jpg" />
+                        <div class="card-resto-infos">
+                            <h2>Central Kitchen</h2>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p><i class="fas fa-phone-alt"></i>  +33.5.57.59.97.28</p>
+                                    <p><i class="fas fa-laptop"></i><a href="https://centralkitchen.fr/">  Site internet</a></p>
+                                </div>
+                                <div class="card-resto-pricing text-right">
+                                    <p><strong>€€</strong></p>
+                                    <p>Avis : <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                                </div>
+                            </div>
+                            <p><i class="fas fa-utensils"></i>    Des plats raffinés et frais dans une atmosphère chaleureuse</p>
+                        </div>
+                    </div>
+
+                     <!--Le St Projet-->
+                    <div class="card-resto">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipMn70Zw4RyKEIWhBLxVYYTWQZBY1Lwyvx2KokYv=w408-h272-k-no" />
+                        <div class="card-resto-infos">
+                            <h2>Le St Projet</h2>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p><i class="fas fa-phone-alt"></i>  +33.5.56.81.19.32</p>
+                                    <p><i class="fas fa-laptop"></i><a href="https://www.facebook.com/pages/category/French-Restaurant/Le-Saint-Projet-339339986938885/">    Site internet</a></p>
+                                </div>
+                                <div class="card-resto-pricing text-right">
+                                    <p><strong>€€</strong></p>
+                                    <p>Avis : <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></p>
+                                </div>
+                            </div>
+                            <p><i class="fas fa-utensils"></i>    Une brasserie animée et conviviale en toutes saisons </p>
+                        </div>
+                    </div>
+
+                    <!--Les délices de Vérone-->
+                    <div class="card-resto">
+                        <img src="https://toquedechoc.com/wp-content/uploads/2015/10/280920153654.jpg" />
+                        <div class="card-resto-infos">
+                            <h2>Les délices de Vérone</h2>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p><i class="fas fa-phone-alt"></i>  +33.5.56.81.55.02</p>
+                                    <p><i class="fas fa-laptop"><a href="https://www.facebook.com/LDVerone/"></i>  Site internet</a></p>
+                                </div>
+                                <div class="card-resto-pricing text-right">
+                                    <p><strong>€</strong></p>
+                                    <p>Avis : <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                                </div>
+                            </div>
+                            <p><i class="fas fa-utensils"></i>    Une cuisine italienne simple et économique</p>
+                    </div>
+            
+            </div>
+        </section>
+
+        <section id="acces">
+            <div class="section-title section-top" style="background-image: linear-gradient(rgba(15,0,20,0.4), rgba(15,0,20,0.4)), url('acces.jpg')">
+                <h3 class="align-items-center">Accès</h3>
+            </div>
+    
+            <div class="row container">
+                <p>La Place Saint Projet se trouve à l'angle de la rue Sainte Catherine et de la rue des Trois-Conils, juste derrière la cathédrale Saint André.</p>
+
+                <div class="col-xs-12 col-md-6">    
+                    <h2>En voiture</h2>
+                    <p class="row">Attention, le centre historique de Bordeaux est piéton, mais deux parkings sont à quelques mètres :
+                    <ul>
+                        <li>
+                            <p><a href="https://fr.parkindigo.com/parking/bordeaux-33000/camille-jullian-33001400">Parking Camille Jullian</a></p>
+                        </li>
+                        <li>
+                            <p><a href="https://fr.parkindigo.com/parking/bordeaux-33000/camille-jullian-33001400">Parking St Christoly</p></a>
+                        </li>
+                    </ul>       
+            
+                    <h2>En tram</h2>
+                    <p>Tram A et tram C : arrêt "Hôtel de Ville". </p>
+                        <a href="https://www.infotbm.com/fr/horaires">
+                            <div class="row">
+                                <img class="logo-mini col-xs-4" src="http://jelaivu.operation-digitale.com/img/logo.svg" alt="TBM">
+                                <p class="col-xs-8">Consulter les horaires </p>
+                            </div>
+                        </a> 
+                        
+                </div>
+
+                <div class="col-xs-12 col-md-6">
+                    <!--Google Map>-->
+                    <div id="map-container-google-11" class="z-depth-1-half map-container" style="height: 400px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5658.29808822937!2d-0.5786678677125124!3d44.8388979790986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527c5405f312b%3A0x76990118fe96b29a!2sPlace%20Saint-Projet%2C%2033000%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1600417631192!5m2!1sfr!2sfr" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer page-footer footer-copyright">
+            <p>
+                © Noémie Piérart - 2020
+            </p>
+        </footer>
+
+    </body>
+</html>
