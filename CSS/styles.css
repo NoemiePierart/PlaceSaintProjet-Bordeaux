@@ -1,10 +1,10 @@
-@import url("CSS/acces.css")
-@import url("CSS/banner.css");
-@import url("CSS/carousel.css");
-@import url("CSS/map.css");
-@import url("CSS/menu.css");
-@import url("CSS/navbar.css");
-@import url("CSS/resto.css")
+@import url("components/acces.css")
+@import url("components/banner.css");
+@import url("components/carousel.css");
+@import url("components/map.css");
+@import url("components/menu.css");
+@import url("components/navbar.css");
+@import url("components/resto.css")
 
 html {
     font-size: 10px;
