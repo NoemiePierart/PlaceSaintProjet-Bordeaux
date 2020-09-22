@@ -1,0 +1,79 @@
+/* Resto - 1 card */
+
+.card-resto {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.card-resto > img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-resto h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.card-resto p {
+    font-size: 14px;
+    opacity: .7;
+    margin: 0;
+    padding: 6px;
+    text-align: left;
+}
+
+.card-resto .card-resto-infos {
+  padding: 15px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+/* Resto overall layout*/
+
+.cards-resto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+/*Smallest device*/
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards-resto {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .cards-resto {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .cards-resto {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .cards-resto {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .cards-resto {
+    grid-template-columns: 1fr 1fr ;
+  }
+}
