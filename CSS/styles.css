@@ -1,10 +1,10 @@
-@import url("components/acces.css")
+@import url("components/acces.css");
 @import url("components/banner.css");
 @import url("components/carousel.css");
 @import url("components/map.css");
 @import url("components/menu.css");
 @import url("components/navbar.css");
-@import url("components/resto.css")
+@import url("components/resto.css");
 
 html {
     font-size: 10px;
@@ -25,7 +25,7 @@ h1 {
 }
 
 h2{
-    font-size: 45px;
+    font-size: 45px !important;
     z-index: -1;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -34,7 +34,7 @@ h2{
 
 h3{
    color: white;
-   font-size: 45px;
+   font-size: 45px !important;
     z-index: -1;
     padding-top: 140px;
     font-family: 'Amatic SC', cursive;
@@ -52,11 +52,11 @@ p {
 }
 
 .container {
-    padding-top: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 15px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
 }
 
 .section-title {
@@ -105,7 +105,7 @@ p {
 }
 
 .footer {
-    background: white;
+    background: white !important;
     height: 55px;
     color: rgba(0,0,0,0.3);
     margin-top: 30px;

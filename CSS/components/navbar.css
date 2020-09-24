@@ -10,7 +10,7 @@
   z-index: 1;
   align-items: center;
   text-decoration: none;
-  position: fixed;
+  position: fixed !important;
 }
 
 .navbar-brand > h5 {
@@ -35,11 +35,11 @@
 }
 
 .dropdown{
-  position: relative;
+  position: relative !important;
 }
 
 .dropdown-menu{
-  position: absolute;
+  position: absolute !important;
   top: 50px;
   z-index: 1000;
   display: none;
