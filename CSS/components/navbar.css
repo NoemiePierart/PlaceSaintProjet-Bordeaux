@@ -38,18 +38,14 @@
   position: relative !important;
 }
 
-.dropdown-menu{
-  position: absolute !important;
-  top: 50px;
+.dropdown-menu.show{
+  position: absolute;
+  top: 53px;
+  left: auto;
   z-index: 1000;
-  display: none;
   float: left;
-  min-width: 160px;
-  padding: 5px 0;
-  list-style: none;
-  font-size: 18px;
-  text-align: left;
-  border: 0px;
+  margin: 0px;
+  border: none;
 }
 
 .dropdown-menu-vertical{

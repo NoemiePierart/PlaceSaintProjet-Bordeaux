@@ -13,7 +13,8 @@
 }
 
 .banner-content {
-    width: 300px;
+    width: 500px;
+    margin-top: 90px;
 }
 
 .banner h1 {
@@ -33,33 +34,22 @@
     text-align: center;
 }
 
-.banner-bottom {
+.banner-link {
     position: absolute;
-    top: 426px;
     bottom: 20px;
     left: 0;
     width: 100%;
-    height: 90px;
-    -webkit-box-pack: center;
     justify-content: center;
-}
-
-.banner-bottom .link {
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
 }
 
-.banner-bottom .link a {
+.banner-link a {
     text-decoration: none;
 }
 
-.banner-bottom .link h4 {
+.banner-link h4 {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 12px;
