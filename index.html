@@ -39,7 +39,7 @@
             <a class="navbar-brand" href="index.html"><h5>Place Saint Projet</h5></a>
 
             <!--Menu on large screens (horizontal)-->
-            <div class="navbar-stprojet-horizontal hidden-xs hidden-sm">
+            <div class="navbar-stprojet-horizontal lg-only">
                 <a href="#accueil" class="navbar-items-stprojet">Accueil</a>
                 <a href="#patrimoine" class="navbar-items-stprojet">Patrimoine</a>
                 <a href="#restaurants" class="navbar-items-stprojet">Restaurants</a>
@@ -48,7 +48,7 @@
 
 
             <!--Menu on mobile (dropdown) -->
-            <div class="navbar-stprojet-vertical hidden-md hidden-lg">
+            <div class="navbar-stprojet-vertical mobile-only">
                 <div class="dropwdown">
                     <i class="fa fa-bars dropwdown-toggle" data-toggle="dropdown" aria-expanded="true" ::before ></i>
                     <ul class="dropdown-menu dropdown-menu-vertical navbar-stprojet-dropwdown-menu" ::before>
@@ -70,7 +70,6 @@
             </div>
         </nav>
 
-        
         <section id="accueil">
             
             <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.lepetitbordeaux.fr/wp-content/uploads/2014/05/Place-Saint-Projet.jpg)">
@@ -103,36 +102,41 @@
                 <!--Menu-->
                 <div class="section-title" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Place_Saint-Projet_%28Bordeaux%29_-_DS5_2213-Edit.jpg/1600px-Place_Saint-Projet_%28Bordeaux%29_-_DS5_2213-Edit.jpg');">
                     <h3>Patrimoine</h3>
-                    <div class="menu hidden-xs">
-                      <ul class="list-inline">
-                        <li><a href="#patrimoine.menu" class="patrimoine-button" data-panel="1">Histoire</a></li>
-                        <li><a href="#patrimoine.menu" class="patrimoine-button" data-panel="2">La fontaine</a></li>
-                        <li><a href="#patrimoine.menu" class="patrimoine-button" data-panel="3">L'église</a></li>
-                        <li><a href="#patrimoine.menu" class="patrimoine-button" data-panel="4" >La croix</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="menu-xs hidden-md hidden-lg">
-                      <ul>
-                        <li>
-                            <a href="#patrimoine.menu"  class="patrimoine-button" data-panel="1" >Histoire</a>
-                            <a href="#patrimoine.menu" class="patrimoine-button" data-panel="2">La fontaine</a>
-                        </li>
-                        <li>
-                            <a href="#patrimoine.menu"  class="patrimoine-button" data-panel="3">L'église</a>
-                            <a href="#patrimoine.menu" class="patrimoine-button" data-panel="4">La croix</a>
-                        </li>
-                      </ul>
+                    <div class="menu lg-only d-flex justify-content-around align-items-center">
+                        <div class="patrimoine-button" data-panel="histoire">Histoire</div>
+                        <div class="patrimoine-button" data-panel="fontaine">La fontaine</div>
+                        <div class="patrimoine-button" data-panel="eglise">L'église</div>
+                        <div class="patrimoine-button" data-panel="croix" >La croix</div>
                     </div>
 
                 </div>
 
+                <script>
+                    const patrimoine_buttons = document.querySelectorAll(".patrimoine-button");
+                    patrimoine_buttons.forEach((button) => {
+                        button.addEventListener("click", (event) => {
+                            const selected_panel = button.dataset.panel
+                            document.querySelectorAll(".patrimoine-pannel").forEach((pannel) => {
+                                if (pannel.id === selected_panel) {
+                                    console.log("Ca matche :")
+                                    console.log(pannel)
+                                    pannel.style.display = "block";
+                                } else  {
+                                    console.log("Ca matche pas :")
+                                    console.log(pannel)
+                                    pannel.style.display = "none";
+                                }
+                            })
+                        })
+                    })
+                </script>
+
                 <!--Volet "histoire"-->
-                <div class="patrimoine-hidden panel-1 patrimoine-show patrimoine-details container" id="histoire">
+                <div class="panel-1 patrimoine-pannel container" id="histoire">
 
                     <h2>Histoire</h2>
                     <div class="row ">
-                        <div class="col-xs-12 col-sm-6">
+                        <div class="col-xs-12 col-lg-6">
                             <p>La place tient son nom de Saint Projet de Clermont, un évêque auvergnat du VIIème siècle, qui fonda plusieurs monastères et un hôpital.</p>
 
                             <p> Dès l’époque médiévale, la place Saint Projet se situait déjà au coeur d’un des quartiers les plus animés de Bordeaux. Elle était alors occupée par un marché, une église et un cimetière.</p>
@@ -142,7 +146,7 @@
                         </div>
                         <!--Carroussel-->
 
-                        <div id="carouselExampleControls" class="carousel slide col-xs-12 col-sm-6" data-interval="2000" data-ride="carousel" >
+                        <div id="carouselExampleControls" class="carousel slide col-xs-12 col-lg-6" data-interval="2000" data-ride="carousel" >
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img class="d-block w-100" src="https://images.fr.shopping.rakuten.com/photo/866197080.jpg" alt="History Pic 1">
@@ -170,7 +174,7 @@
                 </div>
                 
                 <!--Volet "fontaine"-->
-                <div class="patrimoine-hidden panel-2 patrimoine-details container" id="fontaine">
+                <div class="panel-2 patrimoine-pannel hidden-lg container" id="fontaine">
                     <h2>La fontaine</h2>
                     <div class="row">
                         <div class="col-xs-12 col-md-4">
@@ -190,7 +194,7 @@
                 </div>
 
                 <!--Volet "église"-->
-                <div class="patrimoine-hidden panel-3 patrimoine-details container" id="eglise">
+                <div class="panel-3 patrimoine-pannel hidden-lg container" id="eglise">
                     <h2>L'ancienne église</h2>
                     <div class="row intro-title">
                         <div class="col-xs-12 col-md-4">
@@ -210,7 +214,7 @@
                 </div>
 
                 <!--Volet "croix"-->
-                <div class="patrimoine-hidden panel-4 patrimoine-details container" id="croix">
+                <div class="panel-4 patrimoine-pannel hidden-lg container" id="croix">
                     <h2>La croix</h2>
                     <div class="row">
                         <div class="col-xs-12 col-md-4">
@@ -220,9 +224,9 @@
                         </div>
                         <div class="col-xs-12 col-md-8 ">
                             <div class="cards">
-                                <div class="card-category" style="background-image: url('images/croix2.jpg')" alt="Croix1">
+                                <div class="card-category" style="background-image: url('https://i0.wp.com/bordeaux-confidentiel.fr/wp-content/uploads/2019/10/la_croix_de_saint_projet_pr%C3%A9sentation.jpg')" alt="Croix1">
                                 </div>
-                                <div class="card-category" style="background-image: url('images/croix.jpg')" alt="Croix 2">
+                                <div class="card-category" style="background-image: url('https://p.monumentum.fr/main/33/pa00083166-croix-ancien-cimetiere-saint-projet.jpg')" alt="Croix 2">
                                 </div>
                             </div>
                         </div>
@@ -231,28 +235,13 @@
         </section>
 
         <script>
-                function hiddenPatrimoine() {
-                    const buttons = document.querySelectorAll(".patrimoine-button");
-                    const patrimoineData = document.querySelectorAll(".patrimoine-details");
-                    buttons.forEach((button) => {
-                        button.addEventListener('click', () => {
-                            let patrimoineCategory = "panel-" + button.dataset.panel;
-                            patrimoineData.forEach((element) => {
-                                element.classList.remove('patrimoine-show');
-                            });
-                        document.querySelector("." + patrimoineCategory).classList.add('patrimoine-show');
-                       });
-                    });
-                };
-                hiddenPatrimoine();
+
         </script>
 
         <section id="restaurants">
             <div class="section-title section-top" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60')">
                 <h3 class="align-items-center">Restaurants</h3>
             </div>
-    
-
     
             <div class="container">
 
@@ -299,7 +288,7 @@
 
                      <!--Le St Projet-->
                     <div class="card-resto">
-                        <img src="https://lh5.googleusercontent.com/p/AF1QipMn70Zw4RyKEIWhBLxVYYTWQZBY1Lwyvx2KokYv=w408-h272-k-no" />
+                        <img src="https://img-4.linternaute.com/rK0SKR8LUfJ2m3lpA_DgQsSCAfE=/fit-in/550x550/f0914b81bb74415dbdd1c7b98f57df6f/restaurant/57051.jpg"/>
                         <div class="card-resto-infos">
                             <h2>Le St Projet</h2>
                             <div class="d-flex justify-content-between">

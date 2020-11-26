@@ -70,17 +70,16 @@ p {
     margin-bottom: 10px;
 }
 
+@media (min-width: 767px){
+  .mobile-only {
+      display: none !important;
+  }
+}
 
 @media (max-width: 767px){
-.hidden-xs {
-    display: none !important;
-}
-}
-
-@media (min-width: 768px){
-.hidden-md {
-    display: none !important;
-}
+  .lg-only {
+      display: none !important;
+  }
 }
 
 .cards {
